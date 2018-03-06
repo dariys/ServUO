@@ -62,7 +62,7 @@ namespace Server.SkillHandlers
 
                     from.PlaySound(0x241);
 					
-                    if (from.CheckTargetSkill(SkillName.RemoveTrap, targ, targ.TrapPower, targ.TrapPower + 30))
+                    if (from.CheckTargetSkill(SkillName.RemoveTrap, targ, targ.TrapLevel, targ.TrapLevel + 30))
                     {
                         targ.TrapPower = 0;
                         targ.TrapLevel = 0;
